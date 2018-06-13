@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "precommit": "npm run lint",
-    "commitlint": "commitlint -e"
+    "commitmsg": "commitlint -E GIT_PARAMS"
   },
   "private": true,
   "dependencies": {
