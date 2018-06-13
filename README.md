@@ -37,4 +37,3 @@ Husky provide "precommit" and "prepush" in script package.json where we can run 
 ## CommitLint
 
 [Commitlint](https://github.com/marionebl/commitlint) is template for our commit message subject(scope): message... description.
-
