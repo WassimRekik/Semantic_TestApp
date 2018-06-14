@@ -1,3 +1,4 @@
+sudo: required
 dist: trusty
 sudo: false
 
@@ -19,12 +20,15 @@ cache:
 install:
   - npm install
 
+before_script:
+    - "sudo chown root /opt/google/chrome/chrome-sandbox"
+    - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
+
 script:
   # Use Chromium instead of Chrome.
-  - export CHROME_BIN=chromium-browser
-  - xvfb-run -a npm run test:cover -- --single-run --no-progress --browser=ChromeNoSandbox
-  - xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
-  - xvfb-run -a npm run e2e -- --no-progress --config=protractor-ci.conf.js
+  - xvfb-run -a npm run test:cover
+  - xvfb-run -a npm run test
+  - xvfb-run -a npm run e2e -- --protractor-config=protractor-ci.conf.js
 
 after_success:
   - npm  run coveralls
