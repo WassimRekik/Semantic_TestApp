@@ -1,6 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/WassimRekik/dashboardAngular/badge.svg?branch=master)](https://coveralls.io/github/WassimRekik/dashboardAngular?branch=master)
 [![Build Status](https://travis-ci.org/WassimRekik/dashboardAngular.svg?branch=master)](https://travis-ci.org/WassimRekik/dashboardAngular)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8e7392ac5694f9c89b73a38af81c933)](https://www.codacy.com/app/WassimRekik/dashboardAngular?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=WassimRekik/dashboardAngular&amp;utm_campaign=Badge_Grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/WassimRekik/dashboardAngular/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WassimRekik/dashboardAngular?targetFile=package.json)
 # DashboardAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
